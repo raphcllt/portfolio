@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veille technologique | Raphaël COLLET</title>
+  <meta name="description" content="Veille technologique de Raphaël COLLET sur le SASE et le Zero Trust (ZTNA) : méthodologie de collecte, sources, fiches SASE et ZTNA, analyse, impacts métier.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Portfolio Raphaël COLLET">
+  <meta property="og:title" content="Veille technologique | Raphaël COLLET">
+  <meta property="og:description" content="Ma veille sur le SASE, le zero trust (ZTNA) et les évolutions de l'accès sécurisé : méthodologie, sources, fiches et mon analyse.">
+  <meta property="og:image" content="og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo-name">Raphaël <span>COLLET</span></div>
+  <div class="header-tag">RÉSEAU & CYBERSÉCURITÉ</div>
+</header>
+
+<nav>
+  <a href="index.html">Accueil</a>
+  <a href="competences.html">Compétences</a>
+  <a href="projets.html">Projets</a>
+  <a href="#">Certifications</a>
+  <a href="veille.html" class="active">Veille</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+  <div class="grid-layout layout-veille">
+
+    <!-- CARTE D'IDENTITE DE LA VEILLE -->
+    <div class="card" style="grid-column: 1 / -1;">
+      <div class="card-title"><i class="fa-solid fa-compass"></i> Ma veille technologique : identité &amp; problématique</div>
+      <div class="grid-2" style="gap:16px; margin-bottom:14px;">
+        <div>
+          <div style="font-family:'Share Tech Mono',monospace; font-size:0.7rem; color:var(--accent); margin-bottom:3px;">TECHNOLOGIE ÉTUDIÉE</div>
+          <p style="font-size:0.87rem; color:#4a5568; margin:0;">Le SASE (Secure Access Service Edge) et son composant sécurité central, le Zero Trust Network Access (ZTNA)</p>
+        </div>
+        <div>
+          <div style="font-family:'Share Tech Mono',monospace; font-size:0.7rem; color:var(--accent); margin-bottom:3px;">DOMAINE</div>
+          <p style="font-size:0.87rem; color:#4a5568; margin:0;">Cybersécurité &amp; infrastructures réseau</p>
+        </div>
+      </div>
+      <div style="margin-bottom:14px;">
+        <div style="font-family:'Share Tech Mono',monospace; font-size:0.7rem; color:var(--accent); margin-bottom:3px;">PROBLÉMATIQUE DE VEILLE</div>
+        <p style="font-size:0.87rem; color:#4a5568; margin:0;">Comment une organisation peut-elle sécuriser des accès de plus en plus distribués (télétravail, filiales, applications SaaS) sans multiplier les boîtiers et les consoles d'administration, et quelles évolutions récentes de l'architecture SASE changent la donne pour les administrateurs réseau ?</p>
+      </div>
+      <div class="grid-2" style="gap:16px; margin-bottom:14px;">
+        <div>
+          <div style="font-family:'Share Tech Mono',monospace; font-size:0.7rem; color:var(--accent); margin-bottom:3px;">MOTS-CLÉS PRINCIPAUX</div>
+          <div class="project-tags"><span class="tag">SASE</span><span class="tag">Zero Trust</span><span class="tag">ZTNA</span></div>
+        </div>
+        <div>
+          <div style="font-family:'Share Tech Mono',monospace; font-size:0.7rem; color:var(--accent); margin-bottom:3px;">MOTS-CLÉS ASSOCIÉS</div>
+          <div class="project-tags"><span class="tag">SD-WAN</span><span class="tag">SSE</span><span class="tag">CASB</span><span class="tag">ABAC</span><span class="tag">Gartner MQ</span><span class="tag">ANSSI</span></div>
+        </div>
+      </div>
+      <p style="font-size:0.87rem; line-height:1.7; color:#4a5568; margin-bottom:0;">
+        J'ai choisi ce sujet parce qu'il se situe exactement au croisement des deux compétences que je développe en stage à la Fédération des URPS de Normandie : l'administration réseau et la sécurisation des accès. C'est aussi une technologie à forte actualité (nouveau Magic Quadrant Gartner publié en juillet 2026, guide ANSSI de juin 2025) et directement liée à mon projet professionnel d'administrateur systèmes et réseaux.
+      </p>
+    </div>
+
+    <!-- METHODOLOGIE / COLLECTE AUTOMATISEE -->
+    <div class="card" style="grid-column: 1 / -1;">
+      <div class="card-title"><i class="fa-solid fa-satellite-dish"></i> Méthodologie : outils de curation et collecte automatisée</div>
+      <p style="font-size:0.87rem; line-height:1.7; color:#4a5568; margin-bottom:12px;">
+        Pour ne pas dépendre d'une recherche ponctuelle, j'ai mis en place une collecte automatisée avant de commencer l'analyse : un agrégateur de flux RSS pour centraliser les publications, et des alertes par mots-clés pour être averti des évolutions importantes sans avoir à revérifier chaque site manuellement.
+      </p>
+      <div class="grid-2" style="gap:20px; margin-bottom:12px;">
+        <div>
+          <div style="font-family:'Rajdhani',sans-serif; font-weight:700; font-size:0.85rem; letter-spacing:0.8px; text-transform:uppercase; color:var(--accent); margin-bottom:6px;">Flux RSS — Feedly</div>
+          <p style="font-size:0.83rem; color:#4a5568; line-height:1.6; margin-bottom:6px;">Un dossier dédié « Réseau &amp; Sécurité SASE » regroupe les flux du blog technique de Cato Networks, du glossaire/blog Zscaler, d'IT-Connect et du fil d'actualité du CERT-FR (ANSSI). Les éditeurs sans flux RSS exploitable (Netskope, Fortinet) sont suivis manuellement une fois par semaine.</p>
+        </div>
+        <div>
+          <div style="font-family:'Rajdhani',sans-serif; font-weight:700; font-size:0.85rem; letter-spacing:0.8px; text-transform:uppercase; color:var(--accent); margin-bottom:6px;">Alertes par mots-clés</div>
+          <p style="font-size:0.83rem; color:#4a5568; line-height:1.6; margin-bottom:6px;"><strong>Requête 1 :</strong> « SASE Gartner Magic Quadrant » — objectif : être averti dès qu'un éditeur commente un nouveau classement, pour suivre les évolutions du marché.<br><strong>Requête 2 :</strong> « ANSSI Zero Trust » — objectif : être alerté dès la publication d'un nouveau guide ou avis officiel français, considéré comme la source la plus fiable du sujet.</p>
+        </div>
+      </div>
+      <div style="background:#f0fff4; border:1px solid #9ae6b4; border-radius:8px; padding:14px;">
+        <div style="font-family:'Share Tech Mono',monospace; font-size:0.72rem; color:#276749; margin-bottom:6px;">// FRÉQUENCE ET TRI</div>
+        <p style="font-size:0.83rem; color:#2f855a; margin:0;">Le dossier Feedly est relevé une fois par semaine, les alertes sont traitées au fil de l'eau. Une information n'est conservée que si elle répond à ma problématique de veille (pertinence), si elle est récente ou toujours valable (actualité), si elle peut modifier une pratique ou un système d'information (impact), et si son autrice ou son auteur est clairement identifiable (fiabilité). Une information jugée importante n'est retenue qu'après avoir trouvé une deuxième source qui la confirme (vérification).</p>
+      </div>
+    </div>
+
+    <!-- SOURCES -->
+    <div class="card" style="grid-column: 1 / -1;">
+      <div class="card-title"><i class="fa-solid fa-rss"></i> Mes sources de veille (nature et fiabilité)</div>
+      <p style="font-size:0.85rem; color:#4a5568; margin-bottom:12px;">Sept sources de nature différente ont été retenues et suivies régulièrement, pour ne jamais m'appuyer sur un seul type d'émetteur.</p>
+      <div style="overflow-x:auto;">
+      <table style="width:100%; border-collapse:collapse; font-size:0.82rem;">
+        <thead>
+          <tr style="border-bottom:2px solid var(--accent);">
+            <th style="text-align:left; padding:8px 10px; color:#2d3748; font-family:'Rajdhani',sans-serif;">Source</th>
+            <th style="text-align:left; padding:8px 10px; color:#2d3748; font-family:'Rajdhani',sans-serif;">Type</th>
+            <th style="text-align:left; padding:8px 10px; color:#2d3748; font-family:'Rajdhani',sans-serif;">Pourquoi cette source est pertinente</th>
+          </tr>
+        </thead>
+        <tbody style="color:#4a5568;">
+          <tr style="border-bottom:1px solid #e2e8f0;">
+            <td style="padding:8px 10px;">ANSSI — cyber.gouv.fr</td>
+            <td style="padding:8px 10px;">Source institutionnelle officielle</td>
+            <td style="padding:8px 10px;">Référence nationale en cybersécurité, contenu vérifié et sans enjeu commercial</td>
+          </tr>
+          <tr style="border-bottom:1px solid #e2e8f0;">
+            <td style="padding:8px 10px;">Gartner (Magic Quadrant SASE)</td>
+            <td style="padding:8px 10px;">Cabinet d'analystes indépendant</td>
+            <td style="padding:8px 10px;">Compare les éditeurs sur des critères objectifs (vision, exécution), même si je n'y accède qu'au travers des éditeurs</td>
+          </tr>
+          <tr style="border-bottom:1px solid #e2e8f0;">
+            <td style="padding:8px 10px;">Cato Networks (blog technique)</td>
+            <td style="padding:8px 10px;">Source éditeur</td>
+            <td style="padding:8px 10px;">Acteur historique du SASE, utile pour suivre les innovations produit et les argumentaires commerciaux</td>
+          </tr>
+          <tr style="border-bottom:1px solid #e2e8f0;">
+            <td style="padding:8px 10px;">Zscaler (glossaire sécurité)</td>
+            <td style="padding:8px 10px;">Source éditeur</td>
+            <td style="padding:8px 10px;">Second éditeur leader, permet de comparer deux définitions commerciales avant de les recouper avec l'ANSSI</td>
+          </tr>
+          <tr style="border-bottom:1px solid #e2e8f0;">
+            <td style="padding:8px 10px;">IT-Connect</td>
+            <td style="padding:8px 10px;">Média technique spécialisé indépendant</td>
+            <td style="padding:8px 10px;">Analyse pédagogique francophone, sans intérêt commercial direct</td>
+          </tr>
+          <tr style="border-bottom:1px solid #e2e8f0;">
+            <td style="padding:8px 10px;">itsocial.fr</td>
+            <td style="padding:8px 10px;">Presse spécialisée B2B française</td>
+            <td style="padding:8px 10px;">Reportage terrain (événement Cato à Paris), donne un éclairage d'actualité française du sujet</td>
+          </tr>
+          <tr>
+            <td style="padding:8px 10px;">Exiptel / Olfeo</td>
+            <td style="padding:8px 10px;">Prestataires techniques / intégrateurs</td>
+            <td style="padding:8px 10px;">Vulgarisation utile pour poser les définitions de départ, toujours recoupée avec une source plus neutre</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+
+    <!-- FICHE 1 : SASE -->
+    <div class="card" style="grid-column: 1 / -1;">
+      <div class="card-title"><i class="fa-solid fa-cloud-bolt"></i> Fiche de veille n°1 — Le SASE : de la convergence réseau-sécurité à la plateforme pilotée par l'IA</div>
+      <p style="font-size:0.78rem; color:#718096; margin-bottom:12px;">
+        <strong>Auteur / origine :</strong> synthèse personnelle construite à partir des publications de Cato Networks, du cabinet Gartner (relayé par les éditeurs) et des articles d'Exiptel et d'Olfeo &nbsp;·&nbsp;
+        <strong>Dernière mise à jour de la veille :</strong> septembre 2026 (dernier point de recoupement : Magic Quadrant SASE Platforms de Gartner, publié le 28 juillet 2026)
+      </p>
+
+      <h4 style="font-family:'Rajdhani', sans-serif; font-weight:700; font-size:0.85rem; letter-spacing:0.8px; text-transform:uppercase; color:var(--accent); margin:16px 0 6px;">Problématique</h4>
+      <p style="font-size:0.87rem; line-height:1.6; color:#4a5568; margin-bottom:12px;">
+        Comment une organisation peut-elle sécuriser des accès de plus en plus distribués — télétravail, filiales, applications SaaS — sans multiplier les boîtiers, les consoles d'administration et les contrats fournisseurs, alors même que les équipes réseau et les équipes sécurité ont historiquement fonctionné en silos ?
+      </p>
+
+      <h4 style="font-family:'Rajdhani', sans-serif; font-weight:700; font-size:0.85rem; letter-spacing:0.8px; text-transform:uppercase; color:var(--accent); margin:16px 0 6px;">Synthèse structurée</h4>
+      <p style="font-size:0.87rem; line-height:1.6; color:#4a5568; margin-bottom:8px;">
+        <strong>Qu'est-ce que le SASE ?</strong> Une architecture qui regroupe, sur une même plateforme cloud, une fonction de connectivité (<strong>SD-WAN</strong>, réseau étendu piloté par logiciel) et quatre fonctions de sécurité généralement vendues séparément : le <strong>SWG</strong> (filtrage du trafic web sortant), le <strong>CASB</strong> (contrôle des usages des applications cloud/SaaS), le <strong>FWaaS</strong> (pare-feu délivré en service) et le <strong>ZTNA</strong> (accès distant vérifié en continu, détaillé dans la fiche n°2). L'ensemble des quatre briques de sécurité forme ce que Gartner nomme le <strong>SSE</strong> (Security Service Edge) ; le SASE, c'est le SSE auquel s'ajoute le SD-WAN.
+      </p>
+      <p style="font-size:0.87rem; line-height:1.6; color:#4a5568; margin-bottom:8px;">
+        <strong>Pourquoi se développe-t-il maintenant ?</strong> La généralisation du télétravail et des applications SaaS a rendu obsolète le modèle où toute la sécurité passait par un data center central : les flux ne convergent plus vers un point unique, il fallait donc déplacer la sécurité au plus près des utilisateurs, dans le cloud.
+      </p>
+      <p style="font-size:0.87rem; line-height:1.6; color:#4a5568; margin-bottom:8px;">
+        <strong>Principaux acteurs :</strong> en recoupant les positionnements des éditeurs avec le Magic Quadrant Gartner de juillet 2026, deux approches coexistent : le <em>single-vendor SASE</em>, où un seul fournisseur opère toute la chaîne (Palo Alto Networks, quatre fois « Leader » consécutif depuis 2023 ; Fortinet, qui s'appuie sur un système d'exploitation unique, FortiOS), et le <em>multi-vendor SASE</em>, où réseau et sécurité restent assurés par des fournisseurs distincts mais interopérables. Le même rapport place aussi Cato Networks (leader pour la troisième année consécutive), Netskope et Zscaler — ce dernier entrant pour la première fois dans le quadrant SASE après cinq années de reconnaissance sur le seul périmètre SSE — parmi les acteurs de référence.
+      </p>
+      <p style="font-size:0.87rem; line-height:1.6; color:#4a5568; margin-bottom:12px;">
+        <strong>Avantages recoupés entre plusieurs sources :</strong> une seule console d'administration au lieu de plusieurs boîtiers, une sécurité homogène quel que soit le lieu de connexion, un déploiement plus rapide pour un nouveau site ou un nouvel utilisateur. <strong>Limites identifiées :</strong> une dépendance forte à un ou plusieurs éditeurs (vendor lock-in), un coût récurrent sous forme d'abonnement qui remplace l'investissement matériel, et une migration qui suppose de repenser entièrement l'architecture existante plutôt que de l'empiler.
+      </p>
+
+      <h4 style="font-family:'Rajdhani', sans-serif; font-weight:700; font-size:0.85rem; letter-spacing:0.8px; text-transform:uppercase; color:var(--accent); margin:16px 0 6px;">Évolutions récentes</h4>
+      <p style="font-size:0.87rem; line-height:1.6; color:#4a5568; margin-bottom:12px;">
+        La nouveauté de 2026 n'est plus la convergence réseau-sécurité elle-même, déjà bien installée, mais l'intégration de l'intelligence artificielle au cœur des plateformes. Deux usages se distinguent : d'une part, l'<strong>AIOps agentique</strong>, où le SASE utilise l'IA pour anticiper les pannes de liaison et ajuster automatiquement les politiques réseau ; d'autre part, un enjeu de sécurité nouveau, la protection des <strong>agents IA</strong> et des identités machine. Ces agents, capables d'authentifier des actions en chaîne à travers plusieurs systèmes, échappent au modèle classique de vérification ponctuelle en début de session : les architectures récentes déplacent donc le contrôle vers une vérification comportementale continue tout au long de la connexion. Cato Networks a présenté cette évolution lors d'un événement organisé à Paris début juillet 2026, en insistant sur la nécessité de protéger des flux et des interactions plutôt que d'empiler des couches de sécurité supplémentaires.
+      </p>
+
+      <h4 style="font-family:'Rajdhani', sans-serif; font-weight:700; font-size:0.85rem; letter-spacing:0.8px; text-transform:uppercase; color:var(--accent); margin:16px 0 6px;">Mon analyse</h4>
+      <p style="font-size:0.87rem; line-height:1.6; color:#4a5568; margin-bottom:12px;">
+        Le discours « tout-en-un » des éditeurs mérite d'être relativisé : la simplification annoncée profite d'abord aux grandes structures qui ont les moyens de migrer intégralement vers un fournisseur unique. Pour une petite structure comme celle où j'effectue mon stage — sans équipe informatique dédiée — l'intérêt du SASE tiendrait moins à la sophistication de l'IA embarquée qu'à la réduction du nombre de consoles à administrer et à la possibilité de déléguer une partie de la supervision à l'éditeur. À l'inverse, la partie « sécurisation des agents IA » me semble aujourd'hui davantage un argument marketing anticipant un besoin qu'une réalité opérationnelle pour ce type de structure, qui n'utilise pas encore d'agents autonomes en production. C'est un bon exemple de la nécessité de distinguer un fait vérifiable (les résultats du Magic Quadrant) d'un argument commercial (l'urgence de sécuriser des usages qui n'existent pas encore chez tous les clients).
+      </p>
+
+      <h4 style="font-family:'Rajdhani', sans-serif; font-weight:700; font-size:0.85rem; letter-spacing:0.8px; text-transform:uppercase; color:var(--accent); margin:16px 0 6px;">Impacts professionnels</h4>
+      <p style="font-size:0.87rem; line-height:1.6; color:#4a5568; margin-bottom:8px;">
+        Pour un futur administrateur réseau, cette convergence signifie qu'une compétence purement réseau (SD-WAN, routage) ne suffit plus : il faut aussi comprendre les mécanismes de filtrage applicatif et de contrôle d'accès pour dialoguer avec les équipes sécurité, voire les remplacer sur de petites structures. Elle change aussi le modèle économique : on passe d'un investissement en matériel à un abonnement mensuel par utilisateur, ce qui a des conséquences directes sur la façon de chiffrer et de justifier un projet d'infrastructure auprès d'une direction.
+      </p>
+      <p style="font-size:0.87rem; line-height:1.6; color:#4a5568; margin-bottom:12px;">
+        <strong>Compétences nécessaires :</strong> notions de réseau étendu (SD-WAN, routage), bases de la sécurité cloud (filtrage web, contrôle des applications SaaS), et capacité à comparer des offres d'éditeurs. <strong>Perspectives :</strong> à mesure que les agents IA se généraliseront en entreprise, la gestion des identités machine devrait devenir une compétence à part entière, au même titre que la gestion des comptes utilisateurs aujourd'hui.
+      </p>
+
+      <h4 style="font-family:'Rajdhani', sans-serif; font-weight:700; font-size:0.85rem; letter-spacing:0.8px; text-transform:uppercase; color:var(--accent); margin:16px 0 6px;">Sources</h4>
+      <ul style="font-size:0.78rem; color:#718096; line-height:1.9; margin:0; padding-left:18px;">
+        <li>Cato Networks, « From SD-WAN to SASE: How the WAN Evolution is Progressing », <a href="https://www.catonetworks.com/fr/sase/from-sd-wan-to-sase-how-the-wan-evolution-is-progressing/" target="_blank" rel="noopener">catonetworks.com</a> — consulté le 04/09/2026</li>
+        <li>Gartner (relayé par Palo Alto Networks, Cato Networks, Netskope, Zscaler, Fortinet), Magic Quadrant for SASE Platforms, 28 juillet 2026 — pages éditeurs consultées le 04/09/2026</li>
+        <li>Exiptel, « Le Secure Access Service Edge (SASE) : un levier stratégique en 2025 », <a href="https://exiptel.fr/le-secure-access-service-edge-sase-un-levier-strategique-en-2025/" target="_blank" rel="noopener">exiptel.fr</a>, janvier 2025 — consulté le 04/09/2026</li>
+        <li>Olfeo, « SASE vs SSE : comprendre les différences et l'évolution des réseaux d'entreprise », <a href="https://www.olfeo.com/sase-vs-sse-comprendre-les-differences-et-levolution-des-reseaux-dentreprise/" target="_blank" rel="noopener">olfeo.com</a>, décembre 2024 — consulté le 04/09/2026</li>
+        <li>itsocial.fr / Cato Networks (Catopia Tour, Paris), « Le SASE survitaminé à l'IA, nouveau bouclier de résilience », <a href="https://placedelit.com/cato-networks-sase-survitamine-ia-bouclier-resilience/" target="_blank" rel="noopener">placedelit.com</a>, 20 juillet 2026 — consulté le 04/09/2026</li>
+      </ul>
+    </div>
+
+    <!-- FICHE 2 : ZTNA -->
+    <div class="card" style="grid-column: 1 / -1;">
+      <div class="card-title"><i class="fa-solid fa-user-shield"></i> Fiche de veille n°2 — Le Zero Trust Network Access (ZTNA), socle sécurité du SASE</div>
+      <p style="font-size:0.78rem; color:#718096; margin-bottom:12px;">
+        <strong>Auteur / origine :</strong> ANSSI (Agence nationale de la sécurité des systèmes d'information), croisée avec Zscaler et IT-Connect &nbsp;·&nbsp;
+        <strong>Date de publication :</strong> « Modèle Zero Trust » ANSSI-PA-111, publié le 20/06/2025 (référence institutionnelle la plus récente sur le sujet en France)
+      </p>
+
+      <h4 style="font-family:'Rajdhani', sans-serif; font-weight:700; font-size:0.85rem; letter-spacing:0.8px; text-transform:uppercase; color:var(--accent); margin:16px 0 6px;">Problématique</h4>
+      <p style="font-size:0.87rem; line-height:1.6; color:#4a5568; margin-bottom:12px;">
+        Le VPN traditionnel accorde une confiance globale à tout utilisateur authentifié une seule fois en début de session, ce qui expose l'ensemble du réseau interne en cas de compte compromis. Comment vérifier chaque demande d'accès de façon continue et granulaire, sans dégrader l'expérience des utilisateurs distants ?
+      </p>
+
+      <h4 style="font-family:'Rajdhani', sans-serif; font-weight:700; font-size:0.85rem; letter-spacing:0.8px; text-transform:uppercase; color:var(--accent); margin:16px 0 6px;">Synthèse structurée</h4>
+      <p style="font-size:0.87rem; line-height:1.6; color:#4a5568; margin-bottom:8px;">
+        <strong>Qu'est-ce que le ZTNA ?</strong> Un accès réseau fondé sur la « confiance zéro par défaut » : aucun utilisateur ni équipement, interne ou externe, n'est considéré comme fiable a priori. L'ANSSI décrit ce modèle comme reposant sur le contrôle d'accès <strong>ABAC</strong> (Attribute-Based Access Control), qui accorde un droit d'accès en fonction d'attributs contextuels — rôle de l'utilisateur, niveau d'habilitation, horaire, localisation, comportement observé — plutôt que sur une simple appartenance à un groupe. Deux principes structurent cette architecture selon l'agence : l'accès est toujours accordé au plus faible niveau de privilège nécessaire à la tâche, et les conditions d'accès font l'objet d'une réévaluation régulière, et non d'une validation unique en début de session.
+      </p>
+      <p style="font-size:0.87rem; line-height:1.6; color:#4a5568; margin-bottom:12px;">
+        <strong>Recoupement avec les éditeurs :</strong> Zscaler et IT-Connect, deux sources indépendantes de l'ANSSI, décrivent le même principe sous un angle plus commercial : le ZTNA remplace le VPN en ne donnant jamais un accès complet au réseau, mais uniquement à l'application demandée, après vérification de l'identité et de la posture de sécurité du terminal. <strong>Avantage constaté</strong> : la surface d'attaque exposée en cas de compte compromis est fortement réduite. <strong>Limite constatée</strong> : la mise en œuvre suppose un référentiel d'identité déjà propre et à jour, ce qui n'est pas toujours le cas dans les petites structures.
+      </p>
+
+      <h4 style="font-family:'Rajdhani', sans-serif; font-weight:700; font-size:0.85rem; letter-spacing:0.8px; text-transform:uppercase; color:var(--accent); margin:16px 0 6px;">Évolutions récentes</h4>
+      <p style="font-size:0.87rem; line-height:1.6; color:#4a5568; margin-bottom:12px;">
+        Deux évolutions notables complètent la doctrine de 2025. D'abord, les plateformes SASE les plus récentes ne se contentent plus d'une vérification ponctuelle : elles surveillent le comportement pendant toute la durée de la connexion (variation du rythme de frappe, requêtes inhabituelles à une base de données) pour couper la session ou déclencher une authentification renforcée en cas d'anomalie. Ensuite, l'ANSSI a coécrit avec son homologue allemand, le BSI, une publication datée du 11 août 2025 qui étend les principes du Zero Trust aux systèmes fondés sur des modèles de langage (LLM), preuve que ce modèle d'architecture dépasse désormais le seul périmètre réseau pour s'appliquer à la sécurisation des usages de l'IA en entreprise.
+      </p>
+
+      <h4 style="font-family:'Rajdhani', sans-serif; font-weight:700; font-size:0.85rem; letter-spacing:0.8px; text-transform:uppercase; color:var(--accent); margin:16px 0 6px;">Mon analyse</h4>
+      <p style="font-size:0.87rem; line-height:1.6; color:#4a5568; margin-bottom:12px;">
+        Ce que je retiens surtout, c'est que le principe de moindre privilège n'est pas propre au ZTNA : je l'ai déjà appliqué concrètement en stage en déployant KeePassXC selon une logique de séparation des accès. Le ZTNA généralise cette même logique au réseau tout entier. Je nuancerais toutefois le discours des éditeurs sur la disparition annoncée du VPN : pour une petite structure sans budget dédié, remplacer un VPN existant par une solution ZTNA suppose un investissement et une compétence technique que toutes les organisations n'ont pas, contrairement à ce que laissent penser les articles commerciaux qui présentent la bascule comme évidente.
+      </p>
+
+      <h4 style="font-family:'Rajdhani', sans-serif; font-weight:700; font-size:0.85rem; letter-spacing:0.8px; text-transform:uppercase; color:var(--accent); margin:16px 0 6px;">Impacts professionnels</h4>
+      <p style="font-size:0.87rem; line-height:1.6; color:#4a5568; margin-bottom:8px;">
+        Pour un administrateur SISR, le Zero Trust déplace la priorité de la sécurité périmétrique (pare-feu en bordure de réseau) vers la gestion des identités : annuaire à jour, cycle de vie des comptes lors des arrivées/départs, et politiques d'accès pensées par attribut plutôt que par simple appartenance à un groupe. C'est une compétence de plus en plus attendue, y compris dans des structures de petite taille comme celle où j'effectue mon stage.
+      </p>
+      <p style="font-size:0.87rem; line-height:1.6; color:#4a5568; margin-bottom:12px;">
+        <strong>Compétences nécessaires :</strong> gestion d'annuaire et des identités, notions de contrôle d'accès (RBAC/ABAC), compréhension des mécanismes d'authentification multi-facteurs. <strong>Perspectives :</strong> l'extension du Zero Trust aux systèmes d'IA (annoncée par l'ANSSI et le BSI) laisse penser que cette compétence dépassera bientôt le seul périmètre réseau pour couvrir la sécurisation des outils d'intelligence artificielle utilisés en entreprise.
+      </p>
+
+      <h4 style="font-family:'Rajdhani', sans-serif; font-weight:700; font-size:0.85rem; letter-spacing:0.8px; text-transform:uppercase; color:var(--accent); margin:16px 0 6px;">Sources</h4>
+      <ul style="font-size:0.78rem; color:#718096; line-height:1.9; margin:0; padding-left:18px;">
+        <li>ANSSI, « Modèle Zero Trust » (ANSSI-PA-111), <a href="https://messervices.cyber.gouv.fr/documents-guides/anssi-fondamentaux-zero-trust-v1.0.pdf" target="_blank" rel="noopener">cyber.gouv.fr</a>, 20/06/2025 — consulté le 04/09/2026</li>
+        <li>IT-Connect, « ZTNA pour les débutants », <a href="https://www.it-connect.fr/zero-trust-network-access-ztna-pour-les-debutants/" target="_blank" rel="noopener">it-connect.fr</a>, janvier 2025 — consulté le 04/09/2026</li>
+        <li>Zscaler, « What is Zero Trust Network Access », <a href="https://www.zscaler.com/fr/resources/security-terms-glossary/what-is-zero-trust-network-access" target="_blank" rel="noopener">zscaler.com</a> — consulté le 04/09/2026</li>
+        <li>Cato Networks, « SSE vs SASE : choisir sa stratégie », <a href="https://www.catonetworks.com/fr/security-service-edge/sse-vs-sase/" target="_blank" rel="noopener">catonetworks.com</a> — consulté le 04/09/2026</li>
+        <li>DataGuidance, « BSI and ANSSI publish design principles for zero trust LLM-based systems », 11/08/2025 — consulté le 04/09/2026</li>
+      </ul>
+    </div>
+
+    <!-- QUALIFICATION DE L'INFORMATION -->
+    <div class="card">
+      <div class="card-title"><i class="fa-solid fa-magnifying-glass"></i> Comment j'ai qualifié mes informations</div>
+      <p style="font-size:0.85rem; line-height:1.6; color:#4a5568; margin-bottom:10px;">
+        Avant de retenir une information, je vérifie systématiquement cinq critères, illustrés ici avec l'exemple de l'annonce du Magic Quadrant SASE 2026 :
+      </p>
+      <ul style="font-size:0.83rem; color:#4a5568; line-height:1.85; margin:0 0 12px; padding-left:18px;">
+        <li><strong>Fiabilité :</strong> qui est à l'origine de l'information ? — Gartner, cabinet d'analystes reconnu, même si je n'y accède qu'au travers des communiqués des éditeurs concernés.</li>
+        <li><strong>Actualité :</strong> l'information est-elle récente ? — publiée le 28 juillet 2026, donc à jour au moment de la rédaction.</li>
+        <li><strong>Pertinence :</strong> répond-elle à ma problématique ? — oui, elle identifie les acteurs de référence du marché SASE.</li>
+        <li><strong>Impact :</strong> peut-elle modifier une pratique ou un SI ? — oui, elle oriente le choix d'un éditeur pour un projet de migration.</li>
+        <li><strong>Vérification :</strong> ai-je trouvé une confirmation ? — oui, recoupée entre les communiqués de cinq éditeurs différents (Palo Alto, Cato, Netskope, Zscaler, Fortinet) qui citent tous la même date et les mêmes auteurs du rapport.</li>
+      </ul>
+      <p style="font-size:0.85rem; color:#4a5568; line-height:1.6; margin:0;">
+        Plus largement, je me demande toujours : qui le dit, quand, sur quelles données, et dans quel objectif ? Un communiqué d'éditeur annonçant sa propre récompense reste une source valable sur le fait et la date, mais jamais une source neutre sur la qualité comparée des produits : je le croise donc toujours avec un concurrent ou un observateur indépendant.
+      </p>
+    </div>
+
+    <!-- CE QUE CETTE VEILLE M'A APPORTE -->
+    <div class="card">
+      <div class="card-title"><i class="fa-solid fa-graduation-cap"></i> Ce que cette veille m'a apporté</div>
+      <p style="font-size:0.87rem; line-height:1.6; color:#4a5568; margin-bottom:10px;">
+        Cette veille m'a d'abord appris à ne pas confondre actualité et veille : plutôt que de relayer une annonce isolée, j'ai dû suivre l'évolution d'un même sujet sur plusieurs mois grâce à mon dossier Feedly et à mes alertes, pour en dégager une tendance de fond (la bascule vers l'IA-native en 2026) et distinguer un fait vérifiable d'un argument commercial.
+      </p>
+      <p style="font-size:0.87rem; line-height:1.6; color:#4a5568; margin-bottom:10px;">
+        J'ai mobilisé des compétences directement utiles à mon option SISR : la mise en place d'une collecte automatisée (flux RSS, alertes par mots-clés), la lecture de documentation technique en anglais, la définition de vocabulaire spécialisé (ABAC, SD-WAN, CASB…) pour le rendre accessible, et la mise en relation de concepts théoriques avec des situations concrètes rencontrées en stage, comme le lien entre le principe de moindre privilège du Zero Trust et le déploiement de KeePassXC.
+      </p>
+      <p style="font-size:0.87rem; line-height:1.6; color:#4a5568; margin:0;">
+        Enfin, cette veille a changé ma façon d'évaluer une source : je réflexe désormais à me demander qui parle et dans quel intérêt avant de considérer une information comme acquise, une posture que je compte garder pour la suite de ma formation, pour mon oral E5 et en entreprise.
+      </p>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  Raphaël COLLET · Portfolio
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

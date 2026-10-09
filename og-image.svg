@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38b2ac"/>
+      <stop offset="1" stop-color="#4299e1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#1e2a3a"/>
+  <rect x="0" y="0" width="1200" height="12" fill="url(#g)"/>
+  <circle cx="600" cy="252" r="70" fill="url(#g)"/>
+  <text x="600" y="280" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="bold" fill="#ffffff" text-anchor="middle">RC</text>
+  <text x="600" y="392" font-family="Arial, Helvetica, sans-serif" font-size="84" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="3">Raphaël COLLET</text>
+  <text x="600" y="460" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#38b2ac" text-anchor="middle" letter-spacing="7">RÉSEAU &amp; CYBERSÉCURITÉ</text>
+</svg>

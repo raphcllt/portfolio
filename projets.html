@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projets | Raphaël COLLET</title>
+  <meta name="description" content="Projets de Raphaël COLLET : stage URPS Chirurgiens-Dentistes (audit réseau, API FHIR), infrastructure SLOOM, homelab Proxmox, SAE 5G ARCEP, réponse à incident macOS.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Portfolio Raphaël COLLET">
+  <meta property="og:title" content="Projets | Raphaël COLLET">
+  <meta property="og:description" content="Audit réseau et sécurisation d'accès, infrastructure serveur, visualisation 5G et réponse à incident : découvrez mes réalisations BTS SIO et BUT RT.">
+  <meta property="og:image" content="og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo-name">Raphaël <span>COLLET</span></div>
+  <div class="header-tag">RÉSEAU & CYBERSÉCURITÉ</div>
+</header>
+
+<nav>
+  <a href="index.html">Accueil</a>
+  <a href="competences.html">Compétences</a>
+  <a href="projets.html" class="active">Projets</a>
+  <a href="#">Certifications</a>
+  <a href="veille.html">Veille</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+  <div class="grid-layout layout-projects">
+
+    <div class="card" style="margin-bottom: 0;">
+      <div class="card-title"><i class="fa-solid fa-folder-open"></i> Projets & Réalisations</div>
+      <p style="font-size:0.85rem; color:#718096; margin-bottom:24px;">Projets réalisés dans le cadre de mon BTS SIO, de mon stage à l'URPS Chirurgiens-Dentistes de Normandie (26 mai – 26 juin), ainsi que lors de mon année de BUT RT</p>
+
+      <h2 style="font-family:'Rajdhani',sans-serif; font-size:1.25rem; color:#1a202c; margin:0 0 18px; padding-bottom:10px; border-bottom:2px solid var(--accent); display:flex; align-items:center; gap:10px;">
+        <i class="fa-solid fa-graduation-cap" style="color:var(--accent);"></i> BTS SIO SISR
+      </h2>
+
+      <div class="project-card">
+        <h3><i class="fa-solid fa-briefcase" style="color:var(--accent); margin-right:8px;"></i> Stage – URPS Chirurgiens-Dentistes de Normandie (26 mai – 26 juin)</h3>
+        <p style="font-size:0.85rem; color:#718096; margin-bottom:20px;">Mission Parcours Cyber, en partenariat avec Normand'e-santé.</p>
+
+        <div style="border-left:3px solid var(--accent); padding-left:16px; margin-bottom:22px;">
+          <h4 style="font-family:'Rajdhani',sans-serif; font-size:1rem; color:#1a202c; margin-bottom:6px;">
+            <i class="fa-solid fa-network-wired" style="color:var(--accent); margin-right:8px;"></i> Audit réseau & sécurisation des accès
+          </h4>
+          <p><strong>Contexte :</strong> L'URPS Chirurgiens-Dentistes de Normandie ne dispose d'aucun informaticien en interne. Dans le cadre de la mission Parcours Cyber (partenariat Normand'e-santé), un état des lieux du parc informatique et de la sécurité des accès était nécessaire.</p>
+          <p><strong>Réalisation :</strong> Reconnaissance du sous-réseau (nmap, arp -a) : identification d'un FortiGate 30E, d'un switch D-Link, d'une Livebox Business en cours de remplacement, et d'un NAS Synology. Constat de mots de passe stockés en clair, remplacés par le déploiement d'une base KeePassXC (KDBX 4, AES-256, Argon2, phrases Diceware).</p>
+          <p><strong>Résultat :</strong> Cartographie réseau documentée et solution de gestion des mots de passe testée, prête au déploiement sur le NAS de la structure.</p>
+          <div class="project-tags">
+            <span class="tag">nmap</span>
+            <span class="tag">FortiGate</span>
+            <span class="tag">KeePassXC</span>
+            <span class="tag">AES-256 / Argon2</span>
+            <span class="tag">Audit sécurité</span>
+          </div>
+        </div>
+
+        <div style="border-left:3px solid var(--accent); padding-left:16px; margin-bottom:22px;">
+          <h4 style="font-family:'Rajdhani',sans-serif; font-size:1rem; color:#1a202c; margin-bottom:6px;">
+            <i class="fa-solid fa-shield-halved" style="color:var(--accent); margin-right:8px;"></i> Sensibilisation cybersécurité & benchmark national
+          </h4>
+          <p><strong>Contexte :</strong> Évaluer la maturité cyber de l'URPS par rapport aux autres URPS et produire des supports de sensibilisation pour ses adhérents.</p>
+          <p><strong>Réalisation :</strong> Benchmark comparatif de l'engagement cybersécurité des 17 sites régionaux des URPS Chirurgiens-Dentistes, restitué en tableau Excel avec notation par étoiles. Production d'une fiche « Sécuriser son poste de travail au quotidien » en HTML/CSS via WeasyPrint, dans le respect de la charte graphique de l'URPS.</p>
+          <p><strong>Résultat :</strong> Benchmark exploitable et fiche de sensibilisation prête à diffusion auprès des adhérents.</p>
+          <div class="project-tags">
+            <span class="tag">Benchmark</span>
+            <span class="tag">Excel</span>
+            <span class="tag">HTML / CSS</span>
+            <span class="tag">WeasyPrint</span>
+          </div>
+        </div>
+
+        <div style="border-left:3px solid var(--accent); padding-left:16px;">
+          <h4 style="font-family:'Rajdhani',sans-serif; font-size:1rem; color:#1a202c; margin-bottom:6px;">
+            <i class="fa-solid fa-sitemap" style="color:var(--accent); margin-right:8px;"></i> Refonte du site web
+          </h4>
+          <p><strong>Contexte :</strong> Le site de l'URPS devait intégrer une entrée Cybersécurité dédiée et gagner en clarté de navigation.</p>
+          <p><strong>Réalisation :</strong> Conception d'une arborescence en 7 rubriques (dont une rubrique Cybersécurité de premier niveau), rédaction d'un cahier des charges éditorial, puis développement d'un prototype HTML/CSS multi-pages avec la rubrique Cybersécurité intégralement codée.</p>
+          <p><strong>Résultat :</strong> Prototype navigable validé par le tuteur, servant de base à la future refonte du site officiel.</p>
+          <div class="project-tags">
+            <span class="tag">Arborescence web</span>
+            <span class="tag">Cahier des charges</span>
+            <span class="tag">HTML / CSS</span>
+            <span class="tag">UX</span>
+          </div>
+        </div>
+      </br>
+        <div style="border-left:3px solid var(--accent); padding-left:16px;">
+          <h4 style="font-family:'Rajdhani',sans-serif; font-size:1rem; color:#1a202c; margin-bottom:6px;">
+            <i class="fa-solid fa-id-badge" style="color:var(--accent); margin-right:8px;"></i> Vérification d'identité via l'API FHIR ANS (projet site sport-santé)
+          </h4>
+          <p><strong>Contexte :</strong> Pour le futur site sport-santé de l'URPS, il fallait imaginer un moyen de vérifier qu'un professionnel de santé s'inscrivant sur la plateforme était bien réel, via son numéro RPPS.</p>
+          <p><strong>Réalisation :</strong> Test de l'API FHIR ANS (Gravitee) sur Postman avec un vrai numéro RPPS, analyse du retour JSON, et rédaction d'une documentation détaillant la logique de vérification avec un exemple d'implémentation en PHP.</p>
+          <p><strong>Résultat :</strong> L'API confirmait bien l'existence du numéro, mais l'analyse a révélé que le numéro RPPS est une donnée publique — son utilisation seule ne suffit donc pas à garantir une authentification sécurisée, un constat remonté pour orienter la suite du projet vers un facteur de vérification complémentaire.</p>
+          <div class="project-tags">
+            <span class="tag">API FHIR ANS</span>
+            <span class="tag">Postman</span>
+            <span class="tag">RPPS</span>
+            <span class="tag">Authentification</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3><i class="fa-solid fa-database" style="color:var(--accent); margin-right:8px;"></i> Mise en place d'une infrastructure serveur – Entreprise SLOOM</h3>
+        <p><strong>Contexte :</strong> Projet de groupe BTS SIO SISR — l'entreprise SLOOM avait besoin de remplacer un tableur de gestion des réservations par une solution structurée et fiable, hébergée sur un serveur dédié.</p>
+        <p><strong>Réalisation :</strong> Installation et configuration d'un serveur de base de données sous Linux (sans interface graphique) pour héberger la base de données de l'application de gestion des salles. Comparaison de 3 solutions de sauvegarde automatisée (dump planifié, réplication, snapshot) et mise en place de la solution retenue. Déploiement d'un serveur DHCP et configuration d'un poste client Windows 11 en machine virtuelle simulant le poste de l'accueil, avec attribution d'adresse IP dynamique selon le plan d'adressage défini en mission 2.</p>
+        <p><strong>Résultat :</strong> Infrastructure opérationnelle avec serveur BDD Linux, politique de sauvegarde automatisée en place, et poste client Windows 11 fonctionnel récupérant dynamiquement son adresse IP via le serveur DHCP.</p>
+        <div class="project-tags">
+          <span class="tag">Linux</span>
+          <span class="tag">MySQL / MariaDB</span>
+          <span class="tag">DHCP</span>
+          <span class="tag">Windows 11</span>
+          <span class="tag">VirtualBox</span>
+          <span class="tag">Sauvegarde BDD</span>
+          <span class="tag">Administration système</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3><i class="fa-solid fa-fire-flame-curved" style="color:var(--accent); margin-right:8px;"></i> Sécurisation du réseau & wiki interne – Entreprise SLOOM</h3>
+        <p><strong>Contexte :</strong> Projet de groupe BTS SIO SISR — le réseau de SLOOM étant en place, l'objectif était de le sécuriser et de mettre en place des services complémentaires pour les équipes internes.</p>
+        <p><strong>Réalisation :</strong> Élaboration d'un plan de sécurisation réseau détaillé (pare-feu, protocoles, ports, adresses IP). Installation et configuration d'une solution pare-feu professionnelle pour contrôler l'ensemble des flux. Déploiement d'un serveur DNS sécurisé avec mise en place de DNSSEC pour prévenir le spoofing et l'empoisonnement de cache. Installation et configuration d'un wiki interne collaboratif (intranet) accessible à l'ensemble des utilisateurs de SLOOM.</p>
+        <p><strong>Résultat :</strong> Réseau sécurisé avec pare-feu opérationnel, résolution DNS fonctionnelle et protégée, et wiki interne déployé — accompagnés de documentations techniques et d'un rapport de tests complet.</p>
+        <div class="project-tags">
+          <span class="tag">Pare-feu</span>
+          <span class="tag">DNS / DNSSEC</span>
+          <span class="tag">Linux</span>
+          <span class="tag">Sécurité réseau</span>
+          <span class="tag">Wiki / Intranet</span>
+          <span class="tag">Plan de sécurisation</span>
+        </div>
+      </div>
+
+      <h2 style="font-family:'Rajdhani',sans-serif; font-size:1.25rem; color:#1a202c; margin:32px 0 18px; padding-bottom:10px; border-bottom:2px solid var(--accent); display:flex; align-items:center; gap:10px;">
+        <i class="fa-solid fa-house-laptop" style="color:var(--accent);"></i> Homelab
+      </h2>
+
+      <div class="project-card">
+        <h3><i class="fa-solid fa-cubes" style="color:var(--accent); margin-right:8px;"></i> Mise en place d'un homelab sous Proxmox VE</h3>
+        <p><strong>Contexte :</strong> Projet personnel mené en parallèle du BTS SIO SISR : disposer chez moi d'un environnement de virtualisation pour m'entraîner à l'administration système et réseau en conditions réelles.</p>
+        <p><strong>Réalisation :</strong> Installation de Proxmox VE 9.2 sur un mini-PC HP ProDesk 400 G3 DM (Core i3-6100T, 16 Go de RAM) après activation de la virtualisation (VT-x / VT-d) dans le BIOS. Adressage IP statique en dehors de la plage DHCP, doublé d'un bail DHCP statique sur la Freebox. Bascule vers le dépôt « no-subscription » pour les mises à jour, ajout d'un disque dur de 1 To comme stockage dédié aux ISO, aux VMs et aux sauvegardes, et création d'une sauvegarde planifiée (chaque samedi à 00h00, compression ZSTD, 4 sauvegardes conservées) testée manuellement. Accès distant via l'interface web et SSH, sécurisé par un serveur VPN WireGuard sur la Freebox : aucun port de service n'est exposé sur Internet.</p>
+        <p><strong>Résultat :</strong> Hyperviseur opérationnel, administrable en local comme à distance, avec stockage réparti entre SSD et HDD, sauvegarde automatisée validée et accès distant sécurisé par VPN.</p>
+        <div class="project-tags">
+          <span class="tag">Proxmox VE</span>
+          <span class="tag">Virtualisation</span>
+          <span class="tag">WireGuard</span>
+          <span class="tag">Sauvegarde</span>
+          <span class="tag">DHCP / IP statique</span>
+          <span class="tag">SSH</span>
+          <span class="tag">Linux</span>
+        </div>
+        <a href="pdf/mise_en_place_proxmox.pdf" target="_blank" style="display:inline-flex; align-items:center; gap:8px; margin-top:14px; padding:7px 16px; background:#1a1a2e; color:#fff; border-radius:6px; font-size:0.82rem; text-decoration:none; transition:opacity 0.2s;">
+          <i class="fa-solid fa-file-pdf"></i> Consulter la documentation (PDF)
+        </a>
+      </div>
+
+      <div class="project-card">
+        <h3><i class="fa-solid fa-filter" style="color:var(--accent); margin-right:8px;"></i> Mise en place de Pi-hole (DNS filtrant) sous Docker</h3>
+        <p><strong>Contexte :</strong> Bloquer trackers et publicités pour l'ensemble des appareils du réseau domestique sans configurer chaque appareil, tout en m'entraînant à la conteneurisation sur mon serveur Proxmox.</p>
+        <p><strong>Réalisation :</strong> Création d'une VM Debian 13 sans interface graphique sur Proxmox, installation de Docker Engine et Docker Compose depuis le dépôt officiel, puis déploiement de Pi-hole via un fichier docker-compose.yml avec volumes persistants. Adresse IP fixée par bail DHCP statique sur la Freebox, qui distribue Pi-hole comme DNS primaire et Cloudflare (1.1.1.1) comme DNS de secours. Validation par des tests nslookup (domaine publicitaire renvoyé en 0.0.0.0) et par le tableau de bord de Pi-hole.</p>
+        <p><strong>Résultat :</strong> Filtrage DNS actif sur tout le réseau. Une panne rencontrée en cours de route (aucune réponse aux requêtes venant du LAN) a été diagnostiquée étape par étape jusqu'à sa cause, le paramètre <code>dns.listeningMode</code> positionné sur LOCAL, puis corrigée en le passant sur ALL.</p>
+        <div class="project-tags">
+          <span class="tag">Pi-hole</span>
+          <span class="tag">Docker / Compose</span>
+          <span class="tag">DNS</span>
+          <span class="tag">Debian 13</span>
+          <span class="tag">Dépannage réseau</span>
+          <span class="tag">Proxmox VE</span>
+        </div>
+        <a href="pdf/mise_en_place_pi_hole.pdf" target="_blank" style="display:inline-flex; align-items:center; gap:8px; margin-top:14px; padding:7px 16px; background:#1a1a2e; color:#fff; border-radius:6px; font-size:0.82rem; text-decoration:none; transition:opacity 0.2s;">
+          <i class="fa-solid fa-file-pdf"></i> Consulter la documentation (PDF)
+        </a>
+      </div>
+
+      <h2 style="font-family:'Rajdhani',sans-serif; font-size:1.25rem; color:#1a202c; margin:32px 0 18px; padding-bottom:10px; border-bottom:2px solid var(--accent); display:flex; align-items:center; gap:10px;">
+        <i class="fa-solid fa-tower-broadcast" style="color:var(--accent);"></i> BUT RT
+      </h2>
+
+      <div class="project-card">
+        <h3><i class="fa-solid fa-tower-broadcast" style="color:var(--accent); margin-right:8px;"></i> Analyse des expérimentations 5G en France - SAE BUT RT</h3>
+        <p><strong>Contexte :</strong> SAE réalisée en groupe durant le BUT RT — analyse d'un jeu de données réel issu de l'ARCEP portant sur les sites d'expérimentation 5G autorisés en France.</p>
+        <p><strong>Réalisation :</strong> Traitement et visualisation des données en Python : génération de tableaux interactifs (Tkinter) listant les acteurs engagés par région, création d'une carte interactive géolocalisée (Folium) avec clustering des marqueurs et légende, et production de graphiques statistiques (Matplotlib) — répartition des expérimentations par région, top 10 des entreprises, et technologies les plus utilisées. Collaboration via Git/GitHub.</p>
+        <p><strong>Résultat :</strong> Bilan complet sous forme de tableaux, graphiques commentés et carte interactive répertoriant l'ensemble des sites d'expérimentation avec leurs caractéristiques (bande de fréquences, domaines R&D).</p>
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">Matplotlib</span>
+          <span class="tag">Folium</span>
+          <span class="tag">Tkinter</span>
+          <span class="tag">CSV / ARCEP</span>
+          <span class="tag">Git / GitHub</span>
+          <span class="tag">5G</span>
+        </div>
+        <a href="https://github.com/Leocqrl/SAE15" target="_blank" style="display:inline-flex; align-items:center; gap:8px; margin-top:14px; padding:7px 16px; background:#1a1a2e; color:#fff; border-radius:6px; font-size:0.82rem; text-decoration:none; transition:opacity 0.2s;">
+          <i class="fa-brands fa-github"></i> Voir le projet sur GitHub
+        </a>
+      </div>
+
+      <div class="project-card">
+        <h3><i class="fa-solid fa-server" style="color:var(--accent); margin-right:8px;"></i> Infrastructure réseau physique Cisco avec Active Directory – SAE BUT RT</h3>
+        <p><strong>Contexte :</strong> SAE réalisée en groupe durant le BUT RT — déploiement d'une infrastructure réseau réelle sur équipements physiques Cisco (routeurs et switches), avec gestion centralisée des utilisateurs via Active Directory.</p>
+        <p><strong>Réalisation :</strong> Câblage et configuration de routeurs et switches Cisco physiques, mise en place du routage dynamique avec le protocole RIP, déploiement d'un serveur Active Directory avec création de comptes utilisateurs, groupes, GPO et jonction des postes au domaine pour permettre l'authentification des sessions utilisateurs.</p>
+        <p><strong>Résultat :</strong> Infrastructure réseau entièrement fonctionnelle, démontrée et présentée devant un jury — les utilisateurs pouvaient s'authentifier sur les postes du domaine via Active Directory.</p>
+        <div class="project-tags">
+          <span class="tag">Cisco (physique)</span>
+          <span class="tag">RIP</span>
+          <span class="tag">Active Directory</span>
+          <span class="tag">GPO</span>
+          <span class="tag">Windows Server</span>
+          <span class="tag">DNS / DHCP</span>
+          <span class="tag">Câblage réseau</span>
+        </div>
+      </div>
+
+      <h2 style="font-family:'Rajdhani',sans-serif; font-size:1.25rem; color:#1a202c; margin:32px 0 18px; padding-bottom:10px; border-bottom:2px solid var(--accent); display:flex; align-items:center; gap:10px;">
+        <i class="fa-solid fa-user" style="color:var(--accent);"></i> Projets personnels
+      </h2>
+
+      <div class="project-card">
+        <h3><i class="fa-solid fa-bug-slash" style="color:var(--accent); margin-right:8px;"></i> Réponse à incident – Compromission macOS par un infostealer</h3>
+        <p style="font-size:0.85rem; color:#718096; margin-bottom:20px;">Gestion complète d'une infection réelle, hors cadre scolaire, sur le poste d'une connaissance.</p>
+
+        <div style="border-left:3px solid var(--accent); padding-left:16px; margin-bottom:22px;">
+          <h4 style="font-family:'Rajdhani',sans-serif; font-size:1rem; color:#1a202c; margin-bottom:6px;">
+            <i class="fa-solid fa-magnifying-glass" style="color:var(--accent); margin-right:8px;"></i> Détection & confinement
+          </h4>
+          <p><strong>Contexte :</strong> Exécution d'une commande shell malveillante ayant permis l'installation d'un script de type infostealer, technique d'ingénierie sociale connue sous le nom de « ClickFix ». Détection par l'antivirus (Malwarebytes) à la suite de cette exécution.</p>
+          <p><strong>Réalisation :</strong> Mise en quarantaine immédiate par l'antivirus, puis rescan complet du système pour confirmer l'absence de détections résiduelles.</p>
+          <div class="project-tags">
+            <span class="tag">Malwarebytes</span>
+            <span class="tag">ClickFix</span>
+            <span class="tag">Infostealer</span>
+          </div>
+        </div>
+
+        <div style="border-left:3px solid var(--accent); padding-left:16px; margin-bottom:22px;">
+          <h4 style="font-family:'Rajdhani',sans-serif; font-size:1rem; color:#1a202c; margin-bottom:6px;">
+            <i class="fa-solid fa-terminal" style="color:var(--accent); margin-right:8px;"></i> Investigation manuelle
+          </h4>
+          <p><strong>Réalisation :</strong> Analyse en ligne de commande (Terminal) à la recherche de mécanismes de persistance : inspection des LaunchAgents/LaunchDaemons utilisateur et système, recherche de dossiers cachés et de sessions <code>screen</code> actives, vérification des comptes utilisateurs système (<code>dscl</code>). Identification de deux dossiers camouflés en faux processus Apple (<code>~/Library/Application Support/.com.apple.accountsd</code> et <code>.com.apple.metadata.mds</code>), contenant un script bash exécutable et un fichier de configuration avec un identifiant de session lié à un serveur de commande et contrôle (C2). Certains fichiers appartenant à l'utilisateur <code>root</code>, révélant une élévation de privilèges lors de l'infection.</p>
+          <div class="project-tags">
+            <span class="tag">LaunchAgents / LaunchDaemons</span>
+            <span class="tag">Analyse forensique</span>
+            <span class="tag">Ligne de commande macOS</span>
+            <span class="tag">C2</span>
+          </div>
+        </div>
+
+        <div style="border-left:3px solid var(--accent); padding-left:16px;">
+          <h4 style="font-family:'Rajdhani',sans-serif; font-size:1rem; color:#1a202c; margin-bottom:6px;">
+            <i class="fa-solid fa-rotate" style="color:var(--accent); margin-right:8px;"></i> Éradication & remédiation
+          </h4>
+          <p><strong>Réalisation :</strong> Face à la compromission root confirmée, choix d'une réinstallation complète plutôt qu'un nettoyage manuel partiel : sauvegarde sélective des données personnelles, effacement du groupe de volumes APFS complet via l'Utilitaire de disque en mode Recovery, puis réinstallation propre de macOS. Rotation de l'ensemble des identifiants sensibles (Apple ID, comptes principaux) depuis un appareil sain, déconnexion des sessions actives sur les services concernés.</p>
+          <p><strong>Résultat :</strong> Système entièrement assaini, vérifié a posteriori par une nouvelle inspection des emplacements de persistance identifiés — aucune trace résiduelle du malware. Reconstruction progressive de l'environnement de travail avec réinstallation des applications exclusivement depuis leurs sources officielles.</p>
+          <div class="project-tags">
+            <span class="tag">Utilitaire de disque</span>
+            <span class="tag">APFS</span>
+            <span class="tag">macOS Recovery</span>
+            <span class="tag">Rotation d'identifiants</span>
+            <span class="tag">Remédiation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  Raphaël Collet · Portfolio
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap');
+
+:root {
+  --bg-dark: #2d3748;
+  --bg-darker: #1e2a3a;
+  --bg-nav: #4a5568;
+  --bg-card: #ffffff;
+  --bg-header: #ffffff;
+  --accent: #38b2ac;
+  --accent2: #4299e1;
+  --text-dark: #1a202c;
+  --text-light: #e2e8f0;
+  --text-muted: #a0aec0;
+  --border-card: #e2e8f0;
+  --shadow: 0 4px 24px rgba(0,0,0,0.18);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg-dark);
+  color: var(--text-light);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: var(--bg-header);
+  color: var(--text-dark);
+  padding: 18px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 3px solid var(--accent);
+}
+
+header .logo-name {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  font-size: 1.7rem;
+  letter-spacing: 2px;
+  color: var(--text-dark);
+}
+
+header .logo-name span {
+  color: var(--accent);
+}
+
+header .header-tag {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+}
+
+nav {
+  background: var(--bg-nav);
+  padding: 0 40px;
+  display: flex;
+  gap: 0;
+  align-items: stretch;
+  border-bottom: 2px solid var(--bg-darker);
+}
+
+nav a {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  font-size: 0.92rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-light);
+  text-decoration: none;
+  padding: 14px 22px;
+  position: relative;
+  transition: color 0.2s, background 0.2s;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transition: transform 0.25s;
+}
+
+nav a:hover,
+nav a.active {
+  color: var(--accent);
+  background: rgba(255,255,255,0.05);
+}
+
+nav a:hover::after,
+nav a.active::after {
+  transform: scaleX(1);
+}
+
+main {
+  flex: 1;
+  padding: 36px 40px;
+  background: var(--bg-dark);
+}
+
+.grid-layout {
+  display: grid;
+  gap: 24px;
+}
+
+.layout-home {
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto;
+}
+
+.layout-skills {
+  grid-template-columns: 1fr 1fr;
+}
+
+.layout-projects {
+  grid-template-columns: 1fr;
+}
+
+.layout-certs {
+  grid-template-columns: 1fr 1fr;
+}
+
+.layout-veille {
+  grid-template-columns: 1fr 1fr;
+}
+
+.layout-contact {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-2,
+.grid-3 {
+  display: grid;
+}
+
+.grid-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+  background: var(--bg-card);
+  color: var(--text-dark);
+  border-radius: 10px;
+  padding: 28px 30px;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid var(--border-card);
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.22);
+}
+
+.card.tall {
+  grid-row: span 2;
+}
+
+.card.wide {
+  grid-column: span 2;
+}
+
+.card-title {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid var(--border-card);
+  padding-bottom: 10px;
+}
+
+.card-title i {
+  font-size: 1rem;
+}
+
+.card h2 {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: #4a5568;
+}
+
+.profile-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: white;
+  margin: 0 auto 18px;
+  letter-spacing: 2px;
+}
+
+.profile-name {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-align: center;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+
+.profile-role {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--accent);
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 18px;
+}
+
+.profile-info-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: #4a5568;
+  margin-bottom: 8px;
+}
+
+.profile-info-row i {
+  color: var(--accent);
+  width: 16px;
+}
+
+.badge {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  color: white;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.7rem;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin: 3px 3px 0 0;
+  letter-spacing: 0.5px;
+}
+
+.skill-item {
+  margin-bottom: 14px;
+}
+
+.skill-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #4a5568;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.skill-bar {
+  background: #e2e8f0;
+  border-radius: 4px;
+  height: 7px;
+  overflow: hidden;
+}
+
+.skill-fill {
+  height: 100%;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  transition: width 1s ease;
+}
+
+.project-card {
+  background: var(--bg-card);
+  border-radius: 10px;
+  padding: 24px 28px;
+  box-shadow: var(--shadow);
+  border-left: 4px solid var(--accent);
+  margin-bottom: 20px;
+  transition: transform 0.2s;
+}
+
+.project-card:hover {
+  transform: translateX(4px);
+}
+
+.project-card h3 {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--text-dark);
+  margin-bottom: 6px;
+}
+
+.project-card p {
+  font-size: 0.88rem;
+  color: #4a5568;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.7rem;
+  background: #ebf8ff;
+  color: var(--accent2);
+  border: 1px solid #bee3f8;
+  border-radius: 4px;
+  padding: 2px 8px;
+}
+
+.cert-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.cert-item:last-child {
+  border-bottom: none;
+}
+
+.cert-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.cert-info h4 {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  font-size: 0.98rem;
+  color: var(--text-dark);
+}
+
+.cert-info p {
+  font-size: 0.82rem;
+  color: #718096;
+}
+
+.veille-item {
+  padding: 14px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.veille-item:last-child {
+  border-bottom: none;
+}
+
+.veille-date {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--accent);
+  margin-bottom: 4px;
+}
+
+.veille-item h4 {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+
+.veille-item p {
+  font-size: 0.83rem;
+  color: #4a5568;
+  line-height: 1.5;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e2e8f0;
+  text-decoration: none;
+  color: #4a5568;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.contact-row:last-child {
+  border-bottom: none;
+}
+
+.contact-row:hover {
+  color: var(--accent);
+}
+
+.contact-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+}
+
+.btn-cv {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  color: white;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 24px;
+  border-radius: 6px;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.btn-cv:hover {
+  opacity: 0.88;
+  transform: translateY(-2px);
+}
+
+footer {
+  background: var(--bg-header);
+  color: var(--text-muted);
+  text-align: center;
+  padding: 16px 40px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  border-top: 3px solid var(--accent);
+}
+
+@media (max-width: 768px) {
+  header, nav, main, footer {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  nav {
+    flex-wrap: wrap;
+  }
+  .layout-home,
+  .layout-skills,
+  .layout-certs,
+  .layout-veille,
+  .layout-contact {
+    grid-template-columns: 1fr;
+  }
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+  .card.tall,
+  .card.wide {
+    grid-row: unset;
+    grid-column: unset;
+  }
+}
