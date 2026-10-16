@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veille technologique | Raphaël COLLET</title>
+  <meta name="description" content="Veille technologique de Raphaël COLLET sur le SASE et le Zero Trust (ZTNA) : sujet, méthode, sources et fiche de veille.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Portfolio Raphaël COLLET">
+  <meta property="og:title" content="Veille technologique | Raphaël COLLET">
+  <meta property="og:description" content="Ma veille sur le SASE et le zero trust (ZTNA) : méthode, sources et fiche de veille.">
+  <meta property="og:image" content="og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo-name">Raphaël <span>COLLET</span></div>
+  <div class="header-tag">RÉSEAU & CYBERSÉCURITÉ</div>
+</header>
+
+<nav>
+  <a href="index.html">Accueil</a>
+  <a href="competences.html">Compétences</a>
+  <a href="projets.html">Projets</a>
+  <a href="#">Certifications</a>
+  <a href="veille.html" class="active">Veille</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+  <div class="grid-layout layout-veille">
+
+    <!-- SUJET -->
+    <div class="card" style="grid-column: 1 / -1;">
+      <div class="card-title"><i class="fa-solid fa-compass"></i> Mon sujet de veille</div>
+      <div class="v-label">TECHNOLOGIE ÉTUDIÉE</div>
+      <p class="v-text">Le SASE (Secure Access Service Edge) et sa brique sécurité centrale, le Zero Trust Network Access (ZTNA).</p>
+      <div class="v-label">PROBLÉMATIQUE</div>
+      <p class="v-text">Comment sécuriser des accès de plus en plus distribués (télétravail, filiales, SaaS) sans multiplier les boîtiers et les consoles d'administration ?</p>
+      <div class="v-label">MOTS-CLÉS</div>
+      <div class="project-tags"><span class="tag">SASE</span><span class="tag">Zero Trust</span><span class="tag">ZTNA</span><span class="tag">SD-WAN</span><span class="tag">SSE</span><span class="tag">ANSSI</span></div>
+      <p class="v-text" style="margin-top:12px; margin-bottom:0;">Ce sujet croise l'administration réseau et la sécurisation des accès, les deux compétences que je travaille en stage à la Fédération des URPS de Normandie.</p>
+    </div>
+
+    <!-- METHODE ET SOURCES -->
+    <div class="card" style="grid-column: 1 / -1;">
+      <div class="card-title"><i class="fa-solid fa-satellite-dish"></i> Méthode et sources</div>
+      <p class="v-text"><strong>Collecte :</strong> un dossier Feedly dédié (blogs Cato Networks et Zscaler, IT-Connect, CERT-FR), relevé une fois par semaine, et deux alertes par mots-clés : « SASE Gartner Magic Quadrant » et « ANSSI Zero Trust ».</p>
+      <p class="v-text"><strong>Tri :</strong> je garde une information si elle est pertinente, récente, fiable (auteur identifiable) et si une deuxième source la confirme.</p>
+      <div style="overflow-x:auto;">
+        <table style="width:100%; border-collapse:collapse; font-size:0.82rem;">
+          <thead>
+            <tr style="border-bottom:2px solid var(--accent);">
+              <th style="text-align:left; padding:8px 10px; color:#2d3748; font-family:'Rajdhani',sans-serif;">Source</th>
+              <th style="text-align:left; padding:8px 10px; color:#2d3748; font-family:'Rajdhani',sans-serif;">Type</th>
+            </tr>
+          </thead>
+          <tbody style="color:#4a5568;">
+            <tr style="border-bottom:1px solid #e2e8f0;"><td style="padding:8px 10px;">ANSSI</td><td style="padding:8px 10px;">Institutionnelle (référence)</td></tr>
+            <tr style="border-bottom:1px solid #e2e8f0;"><td style="padding:8px 10px;">Gartner (Magic Quadrant SASE)</td><td style="padding:8px 10px;">Cabinet d'analystes</td></tr>
+            <tr style="border-bottom:1px solid #e2e8f0;"><td style="padding:8px 10px;">Cato Networks, Zscaler</td><td style="padding:8px 10px;">Éditeurs</td></tr>
+            <tr style="border-bottom:1px solid #e2e8f0;"><td style="padding:8px 10px;">IT-Connect, itsocial.fr</td><td style="padding:8px 10px;">Médias techniques</td></tr>
+            <tr><td style="padding:8px 10px;">Exiptel, Olfeo</td><td style="padding:8px 10px;">Intégrateurs</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- FICHE DE VEILLE UNIQUE -->
+    <div class="card" style="grid-column: 1 / -1;">
+      <div class="card-title"><i class="fa-solid fa-cloud-bolt"></i> Fiche de veille — SASE et Zero Trust</div>
+      <p style="font-size:0.78rem; color:#718096; margin-bottom:12px;">
+        <strong>Origine :</strong> synthèse personnelle (ANSSI, Gartner, Cato, Zscaler, IT-Connect) &nbsp;·&nbsp;
+        <strong>Mise à jour :</strong> septembre 2026
+      </p>
+
+      <div class="v-h">Le principe</div>
+      <p class="v-text">Le <strong>SASE</strong> regroupe sur une même plateforme cloud le <strong>SD-WAN</strong> (connectivité) et des fonctions de sécurité : filtrage web, contrôle des applications SaaS, pare-feu en service et <strong>ZTNA</strong>. Ce dernier remplace le VPN : il ne donne jamais accès à tout le réseau, seulement à l'application demandée, après vérification de l'identité et de l'état du poste. L'ANSSI le décrit comme une « confiance zéro par défaut », avec le moindre privilège et une réévaluation régulière des accès.</p>
+
+      <div class="v-h">Avantages et limites</div>
+      <p class="v-text"><strong>Avantages :</strong> une seule console, une sécurité identique partout, un déploiement rapide. <strong>Limites :</strong> dépendance à l'éditeur, abonnement récurrent, migration lourde, et un annuaire d'identités qui doit déjà être propre.</p>
+
+      <div class="v-h">Évolution récente</div>
+      <p class="v-text">En 2026, les plateformes intègrent l'IA : prévention des pannes, et surveillance du comportement pendant toute la session plutôt qu'une seule vérification au début. L'ANSSI et le BSI ont aussi publié le 11 août 2025 des principes Zero Trust pour les systèmes à base de LLM.</p>
+
+      <div class="v-h">Mon analyse</div>
+      <p class="v-text">Le discours « tout-en-un » des éditeurs profite surtout aux grandes structures. Pour une petite structure comme mon lieu de stage, remplacer un VPN par du ZTNA demande un budget et des compétences que tout le monde n'a pas. J'ai d'ailleurs déjà appliqué le moindre privilège en déployant KeePassXC avec une séparation des accès. La sécurisation des agents IA me semble encore plus un argument marketing qu'un besoin réel pour ce type de structure.</p>
+
+      <div class="v-h">Impact pour un administrateur SISR</div>
+      <p class="v-text" style="margin-bottom:12px;">La priorité passe du pare-feu en bordure de réseau à la gestion des identités : annuaire à jour, cycle de vie des comptes, politiques d'accès par attribut. À maîtriser : SD-WAN, filtrage applicatif, RBAC/ABAC, authentification multi-facteurs.</p>
+
+      <div class="v-h">Sources</div>
+      <ul class="v-src">
+        <li>ANSSI, « Modèle Zero Trust » (ANSSI-PA-111), <a href="https://messervices.cyber.gouv.fr/documents-guides/anssi-fondamentaux-zero-trust-v1.0.pdf" target="_blank" rel="noopener">cyber.gouv.fr</a>, 20/06/2025</li>
+        <li>Gartner, Magic Quadrant for SASE Platforms, 28/07/2026 (relayé par les éditeurs)</li>
+        <li>Cato Networks, « From SD-WAN to SASE », <a href="https://www.catonetworks.com/fr/sase/from-sd-wan-to-sase-how-the-wan-evolution-is-progressing/" target="_blank" rel="noopener">catonetworks.com</a></li>
+        <li>IT-Connect, « ZTNA pour les débutants », <a href="https://www.it-connect.fr/zero-trust-network-access-ztna-pour-les-debutants/" target="_blank" rel="noopener">it-connect.fr</a>, janvier 2025</li>
+        <li>Zscaler, « What is Zero Trust Network Access », <a href="https://www.zscaler.com/fr/resources/security-terms-glossary/what-is-zero-trust-network-access" target="_blank" rel="noopener">zscaler.com</a></li>
+        <li>itsocial.fr / Cato Networks, « Le SASE survitaminé à l'IA », <a href="https://placedelit.com/cato-networks-sase-survitamine-ia-bouclier-resilience/" target="_blank" rel="noopener">placedelit.com</a>, 20/07/2026</li>
+      </ul>
+      <p style="font-size:0.75rem; color:#718096; margin:8px 0 0;">Sources consultées le 04/09/2026.</p>
+    </div>
+
+    <!-- BILAN -->
+    <div class="card" style="grid-column: 1 / -1;">
+      <div class="card-title"><i class="fa-solid fa-graduation-cap"></i> Ce que cette veille m'a apporté</div>
+      <p class="v-text">J'ai appris à distinguer actualité et veille : suivre un sujet dans la durée, repérer une tendance de fond et séparer un fait vérifiable d'un argument commercial.</p>
+      <p class="v-text" style="margin-bottom:0;">Avant de retenir une information, je me demande qui parle, quand, et dans quel intérêt. C'est un réflexe que je garderai pour l'oral E5 et en entreprise.</p>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  Raphaël COLLET · Portfolio
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

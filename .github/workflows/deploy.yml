@@ -1,0 +1,29 @@
+name: Deploy alwaysdata
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Préparer SSH
+        env:
+          SSH_KEY_B64: ${{ secrets.ALWAYSDATA_SSH_KEY_B64 }}
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s' "$SSH_KEY_B64" | base64 -d > ~/.ssh/id_deploy
+          chmod 600 ~/.ssh/id_deploy
+          echo "ssh-raphael-collet.alwaysdata.net ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMYE80baN21FB1CAKDMqQ5jY/K2a19Bu0A6fZtM2jlSM" > ~/.ssh/known_hosts
+
+      - name: Envoyer le site
+        run: |
+          rsync -avz \
+            -e "ssh -i ~/.ssh/id_deploy -o IdentitiesOnly=yes" \
+            --exclude '.git/' --exclude '.github/' \
+            --exclude 'README.md' --exclude '.gitignore' \
+            ./ raphael-collet@ssh-raphael-collet.alwaysdata.net:~/www/
