@@ -189,6 +189,25 @@
         </a>
       </div>
 
+      <div class="project-card">
+        <h3><i class="fa-solid fa-ban" style="color:var(--accent); margin-right:8px;"></i> Protection SSH contre le brute force avec fail2ban</h3>
+        <p><strong>Contexte :</strong> Protéger le service SSH de ma VM Debian contre les attaques par force brute en bannissant automatiquement les adresses IP qui multiplient les échecs de connexion, et me familiariser avec le fonctionnement de fail2ban.</p>
+        <p><strong>Réalisation :</strong> Installation de fail2ban sur la VM Debian 13 hébergeant Pi-hole, configuration d'un jail sshd dédiée via un fichier jail.local (lecture des journaux via systemd, seuil de 3 échecs en 10 minutes, bannissement de 10 minutes). Simulation d'une attaque par force brute depuis une VM Kali avec Hydra, puis vérification du bannissement via fail2ban-client, les journaux de fail2ban et les règles nftables générées.</p>
+        <p><strong>Résultat :</strong> Bannissement automatique de l'adresse IP attaquante constaté et documenté (détection, ban, règle pare-feu, débannissement automatique après expiration du délai), avec identification des limites de l'outil (protection limitée à la machine locale, sans effet sur les services conteneurisés via Docker).</p>
+        <div class="project-tags">
+          <span class="tag">fail2ban</span>
+          <span class="tag">SSH</span>
+          <span class="tag">Hydra</span>
+          <span class="tag">Kali Linux</span>
+          <span class="tag">nftables</span>
+          <span class="tag">Debian 13</span>
+          <span class="tag">Proxmox VE</span>
+        </div>
+        <a href="pdf/mise_en_place_fail2ban.pdf" target="_blank" style="display:inline-flex; align-items:center; gap:8px; margin-top:14px; padding:7px 16px; background:#1a1a2e; color:#fff; border-radius:6px; font-size:0.82rem; text-decoration:none; transition:opacity 0.2s;">
+          <i class="fa-solid fa-file-pdf"></i> Consulter la documentation (PDF)
+        </a>
+      </div>
+
       <h2 id="but-rt" style="font-family:'Rajdhani',sans-serif; font-size:1.25rem; color:#1a202c; margin:32px 0 18px; padding-bottom:10px; border-bottom:2px solid var(--accent); display:flex; align-items:center; gap:10px;">
         <i class="fa-solid fa-tower-broadcast" style="color:var(--accent);"></i> BUT RT
       </h2>
