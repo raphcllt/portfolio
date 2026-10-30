@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veille NHI | Raphaël COLLET</title>
+  <meta name="description" content="Veille technologique de Raphaël COLLET sur la gestion des identités non humaines (NHI) et des agents IA : sujet, méthode, sources et fiche de veille.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Portfolio Raphaël COLLET">
+  <meta property="og:title" content="Veille NHI | Raphaël COLLET">
+  <meta property="og:description" content="Ma veille sur les identités non humaines (NHI) et les agents IA : méthode, sources et fiche de veille.">
+  <meta property="og:image" content="../og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo-name">Raphaël <span>COLLET</span></div>
+  <div class="header-tag">RÉSEAU & CYBERSÉCURITÉ</div>
+</header>
+
+<nav>
+  <a href="../index.html">Accueil</a>
+  <a href="../competences.html">Compétences</a>
+  <a href="../projets.html">Projets</a>
+  <a href="../certifications.html">Certifications</a>
+  <a href="../veille.html" class="active">Veille</a>
+  <a href="../contact.html">Contact</a>
+</nav>
+
+<main>
+  <div class="grid-layout layout-veille">
+
+    <!-- SUJET -->
+    <div class="card" style="grid-column: 1 / -1;">
+      <div class="card-title"><i class="fa-solid fa-compass"></i> Mon sujet de veille</div>
+      <div class="v-label">TECHNOLOGIE ÉTUDIÉE</div>
+      <p class="v-text">La gestion des identités non humaines (NHI) : les comptes de service, les clés API, les certificats et les agents IA autonomes.</p>
+      <div class="v-label">DOMAINE</div>
+      <p class="v-text">Cybersécurité et gestion des identités et des accès (IAM).</p>
+      <div class="v-label">PROBLÉMATIQUE</div>
+      <p class="v-text">Comment sécuriser et gouverner les identités des agents IA autonomes en entreprise ?</p>
+      <div class="v-label">MOTS-CLÉS</div>
+      <div class="project-tags"><span class="tag">NHI</span><span class="tag">IAM</span><span class="tag">Agents IA</span><span class="tag">Machine identity</span><span class="tag">Secrets management</span><span class="tag">Zero Trust</span><span class="tag">Gouvernance IA</span></div>
+      <p class="v-text" style="margin-top:12px; margin-bottom:0;">Ce sujet fait suite à ma veille sur le SASE et le Zero Trust : le moindre privilège, on l'applique aux utilisateurs, mais les applications et les agents IA ont eux aussi des accès à contrôler.</p>
+    </div>
+
+    <!-- METHODE ET SOURCES -->
+    <div class="card" style="grid-column: 1 / -1;">
+      <div class="card-title"><i class="fa-solid fa-satellite-dish"></i> Méthode et sources</div>
+      <p class="v-text"><strong>Collecte :</strong> j'ai un dossier Feedly dédié (CERT-FR, Le Monde Informatique, Cybersecurity Dive) que je relis une fois par semaine. La page du Top 10 NHI de l'OWASP n'a pas de flux RSS, donc je la consulte à la main. J'ai aussi trois alertes : « non-human identity » avec « AI agents », « identités non humaines » avec « agents IA », et « OWASP » avec « Non-Human Identities ».</p>
+      <p class="v-text"><strong>Tri :</strong> je garde une information quand elle est pertinente, récente, signée par un auteur identifiable et confirmée par une deuxième source. Je me méfie des chiffres des éditeurs, puisqu'ils vendent souvent la solution qui va avec.</p>
+      <div class="v-table-wrap">
+        <table class="v-table">
+          <thead>
+            <tr><th>Source</th><th>Type</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>OWASP</td><td>Communauté open source (référence)</td></tr>
+            <tr><td>NIST (via ExecutiveGov et IDMWorks)</td><td>Institution de normalisation américaine, relayée</td></tr>
+            <tr><td>Le Monde Informatique</td><td>Presse informatique française</td></tr>
+            <tr><td>Cybersecurity Dive</td><td>Presse spécialisée anglophone</td></tr>
+            <tr><td>ConductorOne</td><td>Éditeur (enquête)</td></tr>
+            <tr><td>Forkast</td><td>Média d'explication</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- FICHE DE VEILLE UNIQUE -->
+    <div class="card" style="grid-column: 1 / -1;">
+      <div class="card-title"><i class="fa-solid fa-robot"></i> Fiche de veille — Identités non humaines et agents IA</div>
+      <p style="font-size:0.78rem; color:#718096; margin-bottom:12px;">
+        <strong>Origine :</strong> synthèse personnelle (OWASP, NIST, Le Monde Informatique, Cybersecurity Dive, ConductorOne) &nbsp;·&nbsp;
+        <strong>Mise à jour :</strong> octobre 2026
+      </p>
+
+      <div class="v-h">Le principe</div>
+      <p class="v-text">Une <strong>identité non humaine</strong> (NHI), c'est tout ce qui se connecte à un système sans qu'une personne soit derrière : un compte de service, une clé API, un certificat, et maintenant un <strong>agent IA</strong>. L'OWASP liste les risques propres à ces identités dans un Top 10. Un agent IA pose un problème de plus : il choisit lui-même les actions à lancer et peut même créer d'autres identifiants, ce que ne fait pas un simple compte de service. L'idée, c'est donc de lui donner sa propre identité, un responsable, juste les droits dont il a besoin (c'est le principe du <strong>moindre privilège</strong>) et une durée de vie limitée.</p>
+      <p class="v-text">Si le sujet monte, c'est que ces identités se multiplient plus vite qu'on ne sait les suivre. D'après une enquête de ConductorOne, 47 % des organisations ont plus d'identités non humaines que d'utilisateurs, mais seulement 22 % ont une vision complète de ce qu'elles possèdent. L'<strong>IAM</strong> (la gestion des identités et des accès) a longtemps été pensée pour des humains.</p>
+
+      <div class="v-h">Avantages et limites</div>
+      <p class="v-text"><strong>Avantages :</strong> on sait qui possède quel accès, les droits sont réduits au minimum, les secrets (mots de passe, clés, jetons) sont renouvelés et on peut retracer ce que font les agents. <strong>Limites :</strong> à mi-2026, il n'existe pas encore de standard unique pour l'identité des agents ; les outils d'IAM classiques ont été faits pour des humains ; c'est autant un sujet d'organisation que de technique ; et beaucoup de chiffres viennent d'éditeurs. Cybersecurity Dive explique aussi que les identités non humaines augmentent plus vite que ce que les équipes de sécurité arrivent à suivre.</p>
+
+      <div class="v-h">Évolution récente</div>
+      <p class="v-text">L'OWASP a sorti son Top 10 des risques NHI en 2025. Le 17 février 2026, le NIST a lancé son AI Agent Standards Initiative, suivi d'un document sur l'identité et l'autorisation des agents IA. Il s'appuie sur des standards d'authentification qui existent déjà (OAuth, OpenID Connect, SPIFFE) au lieu de tout recréer. La publication complète est attendue entre fin 2026 et 2027. Côté éditeurs, Okta for AI Agents est disponible depuis le 30 avril 2026.</p>
+
+      <div class="v-h">Mon analyse</div>
+      <p class="v-text">Je prends les chiffres les plus impressionnants avec des pincettes, parce qu'ils viennent surtout d'éditeurs qui vendent la solution. Mais le fond me semble sérieux : une clé API oubliée ou un compte de service avec trop de droits, ça arrive dans n'importe quelle structure, avec ou sans IA. Pour une petite structure, la partie « agents IA autonomes » reste pour l'instant plutôt théorique. En revanche, la partie comptes de service et secrets est très concrète et ne demande pas un gros budget : faire l'inventaire, enlever les droits en trop, renouveler les secrets. Pour moi, l'essentiel à retenir, c'est que ces bases sont les mêmes pour un compte de service et pour un agent IA : si on ne maîtrise pas les premières, inutile de s'attaquer aux seconds.</p>
+
+      <div class="v-h">Impact pour un administrateur SISR</div>
+      <p class="v-text" style="margin-bottom:12px;">Un administrateur croise déjà des NHI sans forcément les appeler comme ça : comptes de service Active Directory, tâches planifiées, clés API de supervision ou de sauvegarde, certificats. Concrètement, il faut les recenser, nommer un responsable pour chacun, limiter leurs droits, éviter les secrets écrits en clair dans les scripts et prévoir leur renouvellement et leur désactivation. Côté compétences, ça demande de bien connaître l'annuaire (Active Directory, Entra ID), la gestion des secrets, les bases d'OAuth et d'OpenID Connect, et le moindre privilège.</p>
+
+      <div class="v-h">Sources</div>
+      <ul class="v-src">
+        <li>OWASP, « Non-Human Identities Top 10 », <a href="https://owasp.org/www-project-non-human-identities-top-10/" target="_blank" rel="noopener">owasp.org</a>, consulté le 29/10/2026</li>
+        <li>ExecutiveGov, concept paper du NIST sur l'identité et le contrôle d'accès des agents IA, <a href="https://executivegov.com/articles/nist-nccoe-concept-paper-ai-agent-access-controls" target="_blank" rel="noopener">executivegov.com</a>, février 2026, consulté le 29/10/2026</li>
+        <li>IDMWorks, « The standards are coming », <a href="https://www.idmworks.com/insight/the-standards-are-coming/" target="_blank" rel="noopener">idmworks.com</a>, consulté le 29/10/2026</li>
+        <li>Le Monde Informatique, « Gestion des identités des agents IA, un défi pour les RSSI », <a href="https://www.lemondeinformatique.fr/actualites/lire-gestion-des-identites-des-agents-ia-un-defi-pour-les-rssi-100096.html" target="_blank" rel="noopener">lemondeinformatique.fr</a>, 06/05/2026, consulté le 29/10/2026</li>
+        <li>Cybersecurity Dive, « Security teams increasingly outflanked by AI agents », <a href="https://www.cybersecuritydive.com/news/security-teams-increasingly-outflanked-by-ai-agents/830290/" target="_blank" rel="noopener">cybersecuritydive.com</a>, 14/09/2026, consulté le 29/10/2026</li>
+        <li>ConductorOne, enquête « Future of Identity Security 2026 », <a href="https://www.conductorone.com/news/press-release/future-of-identity-security-2026" target="_blank" rel="noopener">conductorone.com</a>, consulté le 29/10/2026</li>
+        <li>Forkast, « What is agent identity », <a href="https://forkast.news/what-is-agent-identity/" target="_blank" rel="noopener">forkast.news</a>, consulté le 29/10/2026</li>
+      </ul>
+      <p style="font-size:0.75rem; color:#718096; margin:8px 0 0;">Sources consultées le 29/10/2026.</p>
+    </div>
+
+    <!-- BILAN -->
+    <div class="card" style="grid-column: 1 / -1;">
+      <div class="card-title"><i class="fa-solid fa-graduation-cap"></i> Ce que cette veille m'a apporté</div>
+      <p class="v-text">Avec cette veille, j'ai compris qu'un réseau ne contient pas que des utilisateurs : une bonne partie des accès sont ceux de comptes de service, de clés API et maintenant d'agents IA, qu'on oublie souvent. J'ai aussi appris à distinguer les référentiels (OWASP, NIST) des articles d'éditeurs, dont les chiffres servent aussi à vendre.</p>
+      <p class="v-text" style="margin-bottom:0;"><strong>Compétences mobilisées :</strong> mettre en place une veille (Feedly, alertes), chercher et trier des sources fiables, lire des documents techniques en anglais, reformuler avec mes mots et relier un sujet d'actualité à mon futur métier d'administrateur systèmes et réseaux.</p>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  Raphaël COLLET · Portfolio
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
